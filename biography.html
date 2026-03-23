@@ -4,53 +4,146 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Biography</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    gap: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.2);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: #2c5364;
+}
+
+/* Main container */
+.container {
+    max-width: 700px;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c5364;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #2c5364;
+}
+
+/* Paragraph */
+p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* List */
+ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+/* Footer link */
+.footer {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #2c5364;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>My Biography</h1>
+<!-- Navbar -->
+<div class="navbar">
+    <a href="index.html">Login</a>
+    <a href="register.html">Register</a>
+    <a href="biography.html">Biography</a>
+</div>
 
-<!-- Navigation Links -->
-<nav>
-<a href="#early">Early Life</a> |
-<a href="#achievements">Achievements</a> |
-<a href="login.html">Logout</a>
-</nav>
+<!-- Content -->
+<div class="container">
 
-<hr>
+    <h1>My Biography</h1>
 
-<!-- Early Life Section -->
-<h2 id="early">Early Life</h2>
+    <h2 id="early">Early Life</h2>
+    <p>
+        I was born and raised in a small town where I developed an interest in
+        technology and computers from a young age. During my school years I
+        enjoyed learning about programming, websites, and how applications work.
+    </p>
 
-<p>
-I was born and raised in a small town where I developed an interest in
-technology and computers from a young age. During my school years I
-enjoyed learning about programming, websites, and how applications work.
-</p>
+    <p>
+        My curiosity for technology motivated me to explore coding and web
+        development. I started learning basic HTML and slowly built small
+        projects to improve my skills.
+    </p>
 
-<p>
-My curiosity for technology motivated me to explore coding and web
-development. I started learning basic HTML and slowly built small
-projects to improve my skills.
-</p>
+    <h2 id="achievements">Achievements</h2>
 
-<hr>
+    <ul>
+        <li>Completed my school education successfully.</li>
+        <li>Learned basic web development (HTML).</li>
+        <li>Built my first mini website project.</li>
+        <li>Uploaded my project to GitHub.</li>
+    </ul>
 
-<!-- Achievements Section -->
-<h2 id="achievements">Achievements</h2>
+    <div class="footer">
+        <a href="register.html">← Back to Registration</a>
+    </div>
 
-<ul>
-<li>Completed my school education successfully.</li>
-<li>Learned basic web development (HTML).</li>
-<li>Built my first mini website project.</li>
-<li>Uploaded my project to GitHub.</li>
-</ul>
-
-<hr>
-
-<p>
-<a href="index.html">Go back to Registration</a>
-</p>
+</div>
 
 </body>
 </html>
